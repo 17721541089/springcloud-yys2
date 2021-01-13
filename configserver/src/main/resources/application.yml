@@ -1,0 +1,22 @@
+# 应用名称
+spring:
+  application:
+    name: configserver
+
+
+
+server:
+  port: 8888
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/17721541089/springcloudstudy.git #配置文件所在仓库
+          search-paths: configserver
+          default-label: master #配置文件分支
+          username: 17721541089 #登录账号
+          password: sheng6130219 #登录密码
+
+
+
